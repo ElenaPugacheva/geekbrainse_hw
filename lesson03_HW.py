@@ -6,7 +6,10 @@
 # задание 1
 
 def divide(a , b):
-    return a/b
+    try:
+        return a/b
+    except ZeroDivisionError:
+        return "На 0 делить нельзя"
 print(divide(int(input("Введите делимое: ")), int(input("Введите делитель: ")) ))
 
 # задание 2
